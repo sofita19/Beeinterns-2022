@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Beeinterns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-menu">
+        <div class="main-logo"><img src="imgs/logo.png" alt="Beeinterns"></div>
+        <nav class="main-menu">
+            <ul>
+                <li class="menu">
+                    <input type="checkbox" id="program">
+                    <label for="program">Программа</label>
+                    <ul class="submenu">
+                        <li>
+                            <div><a href="#">Урок 1</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#">Урок 2</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#">Урок 3</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#">Урок 4</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">Менторы</a>
+                </li>
+                <li class="menu">
+                    <input type="checkbox" id="lecture" checked>
+					          <label for="lecture">Лекции</label>
+                    <ul class="submenu">
+                        <li class="active">
+                            <div>
+                                <img src="imgs/html-css.png" style="width: 18px; height: 18px;">
+                                <a href="#">HTML/CSS</a>
+                            </div>
+                        </li>
+						            <li>
+                            <div>
+                                <img src="imgs/git.png" style="width: 12px; height: 18px;">
+                                <a href="#">GIT</a>
+                            </div>
+                        </li>
+						            <li>
+                            <div>
+                                <img src="imgs/js.png" style="width: 14px; height: 18px;">
+                                <a href="#">JavaScript</a>
+                            </div>
+                        </li>
+						            <li>
+                            <div>
+                                <img src="imgs/react.png" style="width: 12px; height: 17px;">
+                                <a href="#">React</a>
+                            </div>
+                        </li>
+						            <li>
+                            <div>
+                                <img src="imgs/angular.png" style="width: 16px; height: 18px;">
+                                <a href="#">Angular</a>
+                            </div>
+                        </li>
+						            <li>
+                            <div>
+                                <img src="imgs/data.png" style="width: 16px; height: 16px;">
+                                <a href="#">Data</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">Правила поступления</a>
+                </li>
+				        <li class="menu">
+                    <a href="#">Новости</a>
+                </li>
+				        <li class="menu">
+                    <a href="#">Обратная связь</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="switch">
+            <label for="switch">Получать рассылку</label>
+            <input type="checkbox" id="switch" checked>
+        </div>
+    </div>
+    <div class="top-menu">
+        <ul>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Поддержка</a></li>
+			<li><a href="#">Настройки</a></li>
+		</ul>
+        <div class="user">
+            <div class="study-info">
+                <div class="numbers">15 готовых дз</div>
+                <div class="numbers">18 лекций</div>
+                <div class="numbers hours"><img src="imgs/energy.png"><span>1200</span> часов</div>
+            </div>
+            <div class="avatar"><img src="imgs/avatar.png"></div>
+            <div class="person">
+                <div class="personal-info">
+                    <div class="person-name">Вася Пупкин</div>
+                    <div class="person-plan">PRO</div>
+                </div>
+                <div class="person-status">Online</div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="section">
+            <div class="info">
+                <div class="level-name">
+                    <span style="color: #9B9BA2;">Базовый уровень</span>
+                    <h2>HTML/CSS</h2>
+                </div>
+                <div class="navigation">
+                <button class="button main_button">Все лекции</button>
+                <button class="button arrow">&#60;</button>
+                <button class="button arrow">&#62;</button>
+              </div>
+            </div>
+            <div class="all-cards">
+                <div class="card">
+                    <img src="imgs/card-1.png">
+                    <div class="card-name">
+                        <h3>Структура HTML</h3>
+                        <p>Назначение блоков: head, body</p>
+                    </div>                    
+                    <div class="date-button">
+                        <div class="card_date">01.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-2.png">
+                    <div class="card-name">
+                        <h3>Подключение стилей</h3>
+                        <p>Виды подключения стилей. Подключение шрифтов</p>
+                    </div>
+                    <div class="date-button">
+                        <div class="card_date">03.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-3.png">
+                    <div class="card-name">
+                        <h3>CSS</h3>
+                        <p>Базовый синтаксис CSS: селекторы, классы</p>
+                    </div>                    
+                    <div class="date-button">
+                        <div class="card_date">08.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-4.png">
+                    <div class="card-name">
+                        <h3>Наследие и каскад</h3>
+                        <p>Наследие и каскад</p>
+                    </div>
+                    <div class="date-button">
+                        <div class="card_date">10.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="info">
+                <div class="level-name">
+                    <span style="color: #9B9BA2;">Продвинутый уровень</span>
+                    <h2>HTML/CSS</h2>
+                </div>
+                <div class="navigation">
+                  <button class="button main_button">Все лекции</button>
+                  <button class="button arrow">&#60;</button>
+                  <button class="button arrow">&#62;</button>
+              </div>
+            </div>
+            <div class="all-cards">
+                <div class="card">
+                    <img src="imgs/card-1.png">
+                    <div class="card-name">
+                        <h3>HTML-формы</h3>
+                        <p>HTML-формы</p>
+                    </div>                    
+                    <div class="date-button">
+                        <div class="card_date">01.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-2.png">
+                    <div class="card-name">
+                        <h3>Flex</h3>
+                        <p>Принципы современной верстки сайта на flex</p>
+                    </div>
+                    <div class="date-button">
+                        <div class="card_date">03.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-3.png">
+                    <div class="card-name">
+                        <h3>Media и viewport</h3>
+                        <p>Адаптивная верстка. Использование media и viewport</p>
+                    </div>                    
+                    <div class="date-button">
+                        <div class="card_date">08.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-4.png">
+                    <div class="card-name">
+                        <h3>CSS Grid</h3>
+                        <p>CSS Grid</p>
+                    </div>
+                    <div class="date-button">
+                        <div class="card_date">10.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="info">
+                <div class="level-name">
+                    <span style="color: #9B9BA2;">Профессиональный уровень</span>
+                    <h2>HTML/CSS</h2>
+                </div>
+                <div class="navigation">
+                  <button class="button main_button">Все лекции</button>
+                  <button class="button arrow">&#60;</button>
+                  <button class="button arrow">&#62;</button>
+              </div>
+            </div>
+            <div class="all-cards">
+                <div class="card">
+                    <img src="imgs/card-1.png">
+                    <div class="card-name">
+                        <h3>Структура HTML</h3>
+                        <p>Назначение блоков: head, body</p>
+                    </div>                    
+                    <div class="date-button">
+                        <div class="card_date">01.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-2.png">
+                    <div class="card-name">
+                        <h3>Подключение стилей</h3>
+                        <p>Виды подключения стилей. Подключение шрифтов</p>
+                    </div>
+                    <div class="date-button">
+                        <div class="card_date">03.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-3.png">
+                    <div class="card-name">
+                        <h3>CSS</h3>
+                        <p>Базовый синтаксис CSS: селекторы, классы</p>
+                    </div>                    
+                    <div class="date-button">
+                        <div class="card_date">08.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/card-4.png">
+                    <div class="card-name">
+                        <h3>Наследие и каскад</h3>
+                        <p>Наследие и каскад</p>
+                    </div>
+                    <div class="date-button">
+                        <div class="card_date">10.02.2022</div>
+                        <button class="main_button">Смотреть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
