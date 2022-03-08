@@ -1,0 +1,352 @@
+body{
+    background-color: #2B2C3A;
+}
+
+.main-logo{
+    height: 60px;
+    padding: 19px 0px 0px 30px;
+}
+
+.left-menu img{
+    width: 138px;
+    height: 37px;
+}
+
+.left-menu li{
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.left-menu{
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #333545;
+}
+
+.menu .submenu{
+    display: none;
+}
+
+.menu input{
+    display: none;
+}
+
+.menu input:checked ~ .submenu{
+    display: block;
+}
+
+.main-menu
+{
+    height: 500px;
+    border-bottom: 1px solid #484855;
+    border-top: 1px solid #484855;
+    padding: 20px 30px 20px 0px;
+    overflow-y: scroll;
+}
+
+.menu > a, label
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu > label::after
+{
+    content: '\25BC';
+    font-size: 50%;
+    cursor: pointer;
+    float: right;
+}
+
+.submenu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submenu a{
+    color: #9B9BA2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.submenu img{
+    margin-right: 10px;
+}
+
+.submenu .active div{
+    color: white;
+    border-left: 3px solid #6F6EFF;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 93.97%);
+}
+
+.menu ul{
+    padding: 0;
+}
+
+.submenu li{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.submenu div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    width: 100%;
+}
+
+.submenu div > a:hover{
+    color: white;
+}
+
+.active a{
+    color: white;
+}
+
+.switch{
+    position: absolute;
+    bottom: 31px;
+    color: #9B9BA2;
+    left: 30px;
+    font-size: 14px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch input[type="checkbox"]{
+    float: right;
+    width: 42px;
+    height: 22px;
+    -webkit-appearance: none;
+    outline: none;
+    background: #333545;
+    border-radius: 20px;
+    border: 1px solid #9B9BA2;
+}
+
+.switch input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background: #9B9BA2;
+    top: 6px;
+    left: 179px;
+}
+
+.switch input:checked[type="checkbox"]::before{
+    left: 198px;
+    background: #6F6EFF;
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+}
+
+.switch label{
+    text-transform: none;
+    font-size: 14px;
+    color: #9B9BA2;
+    padding-top: 6px;
+}
+
+.top-menu {
+    height: 78px;
+    width: calc(100vw - 300px);
+    border-bottom: 1px solid #484855;
+    background-color: #2B2C3A;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 2;
+    left: 280px;
+    top: 0;
+}
+
+.top-menu ul {
+	display: flex;
+	border-right: 1px solid #484855;
+	margin-right: 30px;
+    margin-left: 15px;
+}
+
+.top-menu ul li {
+	margin-right: 14px;
+    list-style-type: none;
+}
+
+.top-menu ul a {
+	font-size: 14px;
+	color: #9B9BA2;
+	padding: 7px;
+    text-decoration: none;
+}
+
+.top-menu ul a:hover {
+	color: white;
+}
+
+.user, .study-info{
+    display: flex;
+    align-items: center;
+}
+
+
+.numbers{
+    background-color: #3A3B48;
+    padding: 7px 9px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Jost';
+}
+
+.hours{
+    font-size: 11px;
+    color: #9B9BA2;
+    display: flex;
+    align-items: center;
+    padding: 2px 9px 2px 0px;
+}
+
+.hours span{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+}
+
+.person-name{
+    font-size: 14px;
+    color: white;
+}
+
+.personal-info{
+    display: flex;
+}
+
+.person-status{
+    color: #24CB8D;
+}
+
+.person-status::before{
+    content: '\2022';
+    margin-right: 3px;
+}
+
+.person-plan{
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    padding: 2px 10px;
+    margin-right: 10px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Jost';
+}
+
+main{
+    margin-left: 330px;
+    margin-top: 120px;
+    padding-right: 10px ;
+}
+
+.section{
+    margin-bottom: 60px;
+    position: relative;
+}
+
+h1, h2, h3{
+    color: white;
+    font-family: 'Jost';
+}
+
+h2{
+    margin-top: 7px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+.all-cards {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 255px;
+    background-color: #373846;
+    border-radius: 6px;
+}
+
+.card img{
+    width: 255px;
+    height: 144px;
+}
+
+.card-name{
+    height: 88px;
+    padding-left: 15px;
+}
+
+.card p{
+    color: #9B9BA2;
+    font-size: 14px;
+}
+
+.date-button {
+    height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+    border-top: 1px solid #484855;
+}
+
+.card_date{
+    color: white; 
+    font-size: 13px;
+}
+
+.main_button{
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    border-radius: 4px;
+    font-size: 13px;
+    color: white;
+    font-family: 'Jost';
+    padding: 10px 19px;
+    border: none;
+}
+
+.navigation .main_button{
+    margin-right: 10px;
+}
+
+.arrow{
+    background: transparent;
+    border: 1px solid #484855;
+    border-radius: 4px;
+    color: white;
+    padding: 9px 12px;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.info{
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
